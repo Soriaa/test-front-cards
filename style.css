@@ -1,0 +1,102 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("images/background.png");
+    background-position: center center;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 1000px;
+}
+
+.example-wrapper {
+    margin: 1em auto;
+    max-width: 800px;
+    width: 95%;
+    font: 18px / 1.5 sans-serif;
+}
+
+.example-wrapper code {
+    background: #F5F5F5;
+    padding: 2px 6px;
+}
+
+.card {
+    display: grid;
+    margin: 3%;
+    grid-template-columns: 275px;
+    grid-template-rows: 220px 60px 40px;
+    grid-template-areas: "image" "text" "stats";
+
+    font-family: roboto;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0, 9);
+    text-align: left;
+    cursor: pointer;
+}
+
+.card-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    object-fit: cover;
+
+}
+
+.card-text {
+    grid-area: text;
+    margin: 3px;
+    border-radius: 15px;
+}
+
+.card-stats span {
+    grid-area: stats;
+    color: rgb(155, 155, 155);
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+.fa-solid {
+    grid-area: stats;
+    color: rgb(255, 212, 56);
+    margin-left: 3px;
+
+}
+
+#heart {
+    color: grey;
+    font-size: 15px;
+    margin-left: 170px;
+}
+
+#heart.red {
+    color: red;
+}
+
+.card-text p {
+    grid-area: text;
+    color: rgb(155, 155, 155);
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+
+.card-text h2 {
+    margin-top: 2px;
+    font-size: 21px;
+    margin-left: 15px;
+    color: rgb(60, 60, 60);
+}
